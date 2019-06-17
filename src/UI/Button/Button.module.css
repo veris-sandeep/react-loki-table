@@ -1,0 +1,20 @@
+.Button{
+    background-color: #01acfe;
+    border: 2px solid #21a2e4;
+    border-radius: 3px;
+    color: white;
+    font-weight:500;
+    padding: 8px 11px;
+    margin: 5px;
+    margin-right: 0px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+.Button i{
+    margin-right: 3px;
+}
+.light{
+    background-color: #fbfbfb;
+    border: 2px solid #e2e6e9;
+    color: #e2e6e9;
+}

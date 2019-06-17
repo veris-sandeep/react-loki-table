@@ -1,0 +1,74 @@
+.Search{
+    display: flex;
+    margin: 5px;
+    margin-left: 0px;
+}
+.Search input{
+    padding: 8px 11px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #01acfe;
+    border-right: none;
+    color: #9aa0ae;
+    background-color: white;
+}
+.Search button{
+    background-color: #01acfe;
+    border: none;
+    color: white;
+    font-weight:500;
+    padding: 9px 12px;
+    box-sizing: border-box;
+}
+.Search button i{
+    margin-right: 3px;
+}
+
+.Search ul{
+  margin: 0px;
+  padding: 0px;;
+  list-style: none;
+  border: 1px solid #d3d3d3;;
+  border-top: none;
+  border-bottom: none;
+  color: #9aa0ae;
+  background-color: white;
+  position: absolute;
+  width: 100px;
+  box-sizing: border-box;
+  z-index: 9999;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+
+}
+.Search ul li:hover{
+  background-color: #f2f7fa;
+  cursor: pointer;
+}
+.select{
+  position: relative;
+  width: 100px;
+  cursor: pointer;
+}
+.select div{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 8px 11px;
+  list-style: none;
+  border: 1px solid #01acfe;
+  border-left: none;
+  color: #9aa0ae;
+  background-color: white;
+}
+
+.select ul li{
+  margin: 0px;
+  padding: 8px 11px;
+  list-style: none;
+  border-bottom: 1px solid #d3d3d3;;
+  border-left: none;
+  color: #9aa0ae;
+  background-color: white;
+}

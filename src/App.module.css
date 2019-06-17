@@ -1,0 +1,12 @@
+.Container{
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+.MemberName{
+  font-weight: 400;
+  color: #01abff;
+}
+.MemberDesignation{
+  font-weight: 400;
+}

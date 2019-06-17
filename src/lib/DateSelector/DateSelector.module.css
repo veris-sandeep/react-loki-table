@@ -1,0 +1,21 @@
+.DateSelector{
+    display: inline-block;
+}
+.DateSelector input{
+    padding: 8px 11px;
+    border: none;
+    background-color: #fbfbfb;
+    border: 2px solid #e2e6e9;
+    border-radius: 3px;
+
+}
+.DateSelector input:nth-child(1){
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.DateSelector input:nth-child(2){
+    border-left:none;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+
+}

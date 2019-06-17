@@ -1,0 +1,57 @@
+.Container{
+    position: relative;
+}
+.Menu{
+    position: absolute;
+    right: 30px;
+    z-index: 99999;
+    background-color: white;
+    color: #4a556b;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.Menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px
+
+}
+.Menu ul li{
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 0.85em;
+}
+.Menu i{
+    margin-right: 5px;
+}
+.Menu ul li:hover{
+    background-color: rgba(241, 241, 241, 0.5);
+    cursor: pointer;
+}
+.Dots{
+    font-weight: 900;
+    font-size: 1em
+}
+.Dots:hover{
+    color: #02abfe
+}
+.Backdrop{   
+    position: fixed;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 99998;
+}
+.pointer{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    right: 0px;
+    transform: rotate(45deg) translate(-16px,4px);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 99998;
+
+
+}
