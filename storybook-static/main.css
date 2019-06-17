@@ -1,0 +1,484 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+                "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+                sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.9em;
+  background-color: #f2f7fa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App_Container__10KOh{
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+.App_MemberName__MZBx0{
+  font-weight: 400;
+  color: #01abff;
+}
+.App_MemberDesignation__LdOJ2{
+  font-weight: 400;
+}
+
+.Menu_Container__2OVCo{
+    position: relative;
+}
+.Menu_Menu__3369Q{
+    position: absolute;
+    right: 30px;
+    z-index: 99999;
+    background-color: white;
+    color: #4a556b;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.Menu_Menu__3369Q ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px
+
+}
+.Menu_Menu__3369Q ul li{
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 0.85em;
+}
+.Menu_Menu__3369Q i{
+    margin-right: 5px;
+}
+.Menu_Menu__3369Q ul li:hover{
+    background-color: rgba(241, 241, 241, 0.5);
+    cursor: pointer;
+}
+.Menu_Dots__1v3Bw{
+    font-weight: 900;
+    font-size: 1em
+}
+.Menu_Dots__1v3Bw:hover{
+    color: #02abfe
+}
+.Menu_Backdrop__1KuQZ{   
+    position: fixed;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 99998;
+}
+.Menu_pointer__30BML{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    right: 0px;
+    -webkit-transform: rotate(45deg) translate(-16px,4px);
+            transform: rotate(45deg) translate(-16px,4px);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 99998;
+
+
+}
+.CustomCheckbox_CheckboxContainer__3MNTd{
+    display: flex;
+    justify-content: center;
+}
+.CustomCheckbox_CheckboxContainer__3MNTd label{
+   display: block;
+   position: relative;
+   cursor: pointer;
+   font-size: 22px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   height: 25px;
+   width: 25px;
+}
+ 
+ /* Hide the browser's default checkbox */
+.CustomCheckbox_CheckboxContainer__3MNTd input {
+   position: absolute;
+   opacity: 0;
+   cursor: default;
+   height: 0;
+   width: 0;
+   left: 0px;
+}
+ 
+ /* Create a custom checkbox */
+.CustomCheckbox_Checkmark__3JebZ {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 25px;
+   width: 25px;
+   background-color: white; 
+   border-radius: 50%;
+   border: 3px solid #eee;
+}
+ 
+ /* On mouse-over, add a grey background color */
+.CustomCheckbox_CheckboxContainer__3MNTd label:hover input ~ .CustomCheckbox_Checkmark__3JebZ {
+   border: 3px solid #ccc;
+}
+ 
+ /* When the checkbox is checked, add a blue background */
+.CustomCheckbox_CheckboxContainer__3MNTd label input:checked ~ .CustomCheckbox_Checkmark__3JebZ {
+   background-color: #01acfe;
+   border: none;
+}
+ 
+ /* Create the Checkmark/indicator (hidden when not checked) */
+.CustomCheckbox_Checkmark__3JebZ:after {
+   content: "";
+   position: absolute;
+   display: none;
+}
+ 
+ /* Show the Checkmark when checked */
+ .CustomCheckbox_CheckboxContainer__3MNTd input:checked ~ .CustomCheckbox_Checkmark__3JebZ:after {
+   display: block;
+ }
+ 
+ /* Style the Checkmark/indicator */
+ .CustomCheckbox_CheckboxContainer__3MNTd .CustomCheckbox_Checkmark__3JebZ:after {
+   left: 9px;
+   top: 5px;
+   width: 5px;
+   height: 10px;
+   border: solid white;
+   border-width: 0 3px 3px 0;
+   -webkit-transform: rotate(45deg);
+   transform: rotate(45deg);
+ } 
+.ReactTable{
+  color: #4d5369;
+  font-weight: 200;
+  background-color: white;
+  border: none;
+}
+.ReactTable p{
+  margin: 0px;
+  padding-top: 2px;
+}
+.ReactTable .rt-thead.-header {
+  box-shadow: none;
+}
+.ReactTable .rt-thead .rt-th{
+  padding: 7px 0px;
+  border-right: none;
+  font-weight: 500;
+  color: #9aa0ae;
+  box-sizing: border-box;
+}
+.ReactTable .rt-thead .rt-resizable-header-content{
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+.ReactTable .rt-thead .rt-th:hover .rt-resizable-header-content{
+  border-right: 1px solid #eaedf4;
+  border-left: 1px solid #eaedf4;
+}
+.ReactTable .rt-th, .ReactTable .rt-td:nth-child(8){
+    overflow: visible;
+}
+.ReactTable .rt-th, .ReactTable .rt-td p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ReactTable .rt-thead .rt-tr{
+  text-align: left
+}
+.ReactTable .rt-tbody .rt-tr-group{
+    border: 0px;
+    padding: 0px 0px; 
+}
+.ReactTable .rt-tbody .rt-tr-group:hover{
+    background-color: #f9fbfa;
+}
+.ReactTable .rt-tbody .rt-tr-group:hover .rt-td:first-child{
+    border-left: 10px solid #01acfe ;
+}
+.ReactTable .rt-tbody .rt-td{
+  border-top: 2px solid #eaedf4;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border-right: none;
+}
+.ReactTable .rt-td>div{
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.ReactTable .rt-td:nth-child(2) >div{
+  align-items: center;
+}
+.ReactTable .rt-td:last-child{
+  border: 0px;
+}
+.ReactTable .rt-td:first-child{
+  border: 0px;
+}
+.ReactTable .rt-thead .rt-th.-sort-desc{
+  padding-left: 30px;
+  box-shadow: none;
+}
+.ReactTable .rt-thead .rt-th.-sort-desc::before{
+  position: absolute;
+  content: "";
+  left: 10px;
+  top:24px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+.ReactTable .rt-thead .rt-th.-sort-asc{
+  padding-left: 30px;
+  box-shadow: none;
+}
+.ReactTable .rt-thead .rt-th.-sort-asc::before{
+  position: absolute;
+  content: "";
+  left: 10px;
+  top:20px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-color: transparent transparent rgb(0, 0, 0) transparent;
+}
+.LokiTable .searchControls{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between
+}
+.LokiTable .controlsContainer{
+  background-color: white;
+}
+.LokiTable .controls{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 0px  40px;
+}
+.LokiTable .pageControl{
+  flex: 1 1;
+  display: flex;
+ border-bottom: 2px solid #eaedf4;
+  height: 60px;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+.LokiTable .pageControl p{
+  display: inline-block;
+  margin: 0px;
+  font-size: 0.9em;
+  color: #4d5369;
+  font-weight: 400
+}
+
+.Search{
+    display: flex;
+    margin: 5px;
+    margin-left: 0px;
+}
+.Search input{
+    padding: 8px 11px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #01acfe;
+    border-right: none;
+    color: #9aa0ae;
+    background-color: white;
+}
+.Search button{
+    background-color: #01acfe;
+    border: none;
+    color: white;
+    font-weight:500;
+    padding: 9px 12px;
+    box-sizing: border-box;
+}
+.Search button i{
+    margin-right: 3px;
+}
+
+.Search ul{
+  margin: 0px;
+  padding: 0px;;
+  list-style: none;
+  border: 1px solid #d3d3d3;;
+  border-top: none;
+  border-bottom: none;
+  color: #9aa0ae;
+  background-color: white;
+  position: absolute;
+  width: 100px;
+  box-sizing: border-box;
+  z-index: 9999;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+
+}
+.Search ul li:hover{
+  background-color: #f2f7fa;
+  cursor: pointer;
+}
+.select{
+  position: relative;
+  width: 100px;
+  cursor: pointer;
+}
+.select div{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 8px 11px;
+  list-style: none;
+  border: 1px solid #01acfe;
+  border-left: none;
+  color: #9aa0ae;
+  background-color: white;
+}
+
+.select ul li{
+  margin: 0px;
+  padding: 8px 11px;
+  list-style: none;
+  border-bottom: 1px solid #d3d3d3;;
+  border-left: none;
+  color: #9aa0ae;
+  background-color: white;
+}
+
+.DateSelector_DateSelector__3eM-d{
+    display: inline-block;
+}
+.DateSelector_DateSelector__3eM-d input{
+    padding: 8px 11px;
+    border: none;
+    background-color: #fbfbfb;
+    border: 2px solid #e2e6e9;
+    border-radius: 3px;
+
+}
+.DateSelector_DateSelector__3eM-d input:nth-child(1){
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.DateSelector_DateSelector__3eM-d input:nth-child(2){
+    border-left:none;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+
+}
+.LoadDataIndicator_LoadData__1Xc_8{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    z-index: 1000;
+}
+.LoadDataIndicator_LoadData__1Xc_8 div{
+    cursor: pointer;
+    background-color: #f2f7fa;;
+    display: block;
+    padding: 5px 30px;
+    padding-right: 10px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #4d5369;
+    font-size: 0.9em;
+}
+.LoadDataIndicator_LoadData__1Xc_8 div:hover{
+    background-color: #4d5369;
+    color: white;
+}
+.LoadDataIndicator_LoadData__1Xc_8 i{
+    margin-left: 10px;
+}
+.Button_Button__2ivc1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-left: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Button_Button__2ivc1 i{
+    position: absolute;
+    top:4px;
+    left: 4px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+.Button_Button__2ivc1:hover i{
+    padding: 8px;
+    top:-4px;
+    left: -4px;
+    background-color: #f2f7fa;
+}
+
+.Sort_Backdrop__24aln{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+    z-index: 9998;
+}
+.Sort_Sort__Fg71E{
+    position: relative;
+    z-index: 9999;
+}
+.Sort_SortMenu__3Uygg{
+    margin-top:10px; 
+    position: absolute;
+    min-width:150px ;
+    z-index: 99999  ;
+    background-color: white;
+    color: #4a556b;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    right: 0px;
+}
+.Sort_SortMenu__3Uygg ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px
+}
+.Sort_SortMenu__3Uygg ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 0.93em;
+}
+.Sort_SortMenu__3Uygg ul li:hover{
+    background-color: rgba(241, 241, 241, 0.5);
+    cursor: pointer;
+}  
+
+/*# sourceMappingURL=main.css.map*/
