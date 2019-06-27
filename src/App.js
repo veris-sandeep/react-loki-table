@@ -94,7 +94,7 @@ class App extends Component{
                   sortBy={["department", "designation", "created", "group", "email", "phone", "name", "gender", "type", "id"]}
 
                   getData={async (sortKey)=>{
-                      let response = await axios.get(`https://r49s5gk7z3.execute-api.us-east-1.amazonaws.com/faker?created=${sortKey}`) 
+                      let response = await axios.get(`https://p2tj73cdah.execute-api.us-east-1.amazonaws.com/development?created=${sortKey}`) 
                         return response.data.Items.map(item=>{
                             return {
                             department: item.department.S,
